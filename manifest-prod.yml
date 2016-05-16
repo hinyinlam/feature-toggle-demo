@@ -1,0 +1,9 @@
+---
+applications:
+- name: FeatureToggleDemo
+  instance: 1
+  memory: 512M
+  path: target/featuretoggle-0.0.1-SNAPSHOT.jar
+  env:
+    Feature.ArticleSearch.ReturnNonmemberArticle : true
+    Feature.ArticleSearch.CleanSensitiveWords : true
